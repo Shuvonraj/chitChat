@@ -4,8 +4,8 @@ import React from 'react';
 const Registration = () => {
   return (
     <>
-      <section className='flex justify-between lg:mx-0 mx-auto text-center lg:text-left overflow-x-hidden '>
-        <div className='lg:w-2/4 lg:ml-[193px] mt-[99px]  lg:mt-[225px]  font-nunito '>
+      <section  className='flex lg:justify-between lg:mx-0 mx-auto w-screen text-center lg:text-left overflow-x-hidden '>
+        <div className='lg:w-2/4 w-[8977px] lg:ml-[193px] mt-[99px] lg:mt-[225px]  font-nunito '>
           <div className='font-bold lg:px-0 px-5 text-2xl lg:text-4xl'>Get started with easily register</div>
           <div className='lg:text-xl text-lg	pt-[13px] opacity-50 text-black font-normal'>Free register and you can enjoy it</div>
           <div className='mt-[62px] relative'>
@@ -23,11 +23,11 @@ const Registration = () => {
           <button className='lg:px-[158px] px-[124px]  lg:w-96 font-nunito font-semibold text-white hover:bg-[#5f35f5a9] bg-[#5F35F5] py-5 mt-[52px] rounded-[86px] '>Sign up</button>
           
           
-          <p className=' font-nunito text-center w-96 mt-6 pb-8 '>Already  have an account ? <span className=' font-nunito text-[#EA6C00] font-semibold '>Sign In</span></p>
+          <p className=' font-nunito text-center lg:w-96 mt-6 pb-8 '>Already  have an account ? <span className=' font-nunito text-[#EA6C00] font-semibold '>Sign In</span></p>
         </div>
         
         
-        <div className='w-2/4'>
+        <div className='lg:w-2/4 w-full'>
           <img className='w-full hidden lg:block  h-screen object-cover' src='src\assets\rightImg.jpg' alt="" srcset="" />
 
         </div>
