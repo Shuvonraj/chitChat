@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { AiFillEyeInvisible } from 'react-icons/ai'
 import { createUserWithEmailAndPassword, getAuth, sendEmailVerification } from "firebase/auth";
 import { ToastContainer, toast } from 'react-toastify';
+import { Link,useNavigate } from 'react-router-dom';
+
 
 
 
@@ -11,6 +13,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const Registration = () => {
 
   const auth = getAuth();
+  const Navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [fullName, setFullNamee] = useState('');
@@ -59,6 +62,7 @@ const Registration = () => {
           setEmail('');
           setFullNamee('');
           setPassword('');
+          n=Navigate('/login')
         });
       }).catch((error) => {
         if (error.code.includes('auth/email-already-in-use')) {
@@ -115,7 +119,7 @@ const Registration = () => {
           <button onClick={handleSubmit} className=' active:scale-90 lg:px-[158px] px-[124px]  lg:w-96 font-nunito font-semibold text-white hover:bg-[#5f35f5a9] bg-[#5F35F5] py-5 mt-[52px] rounded-[86px] '>Sign up</button>
 
 
-          <p className=' font-nunito text-center lg:w-96 mt-6 pb-8 '>Already  have an account ? <span className=' font-nunito text-[#EA6C00] font-semibold '>Sign In</span></p>
+          <p className=' font-nunito text-center lg:w-96 mt-6 pb-8 '>Already  have an account ? <Link to='/login' className=' font-nunito text-[#EA6C00] font-semibold '>Sign In</Link></p>
         </div>
 
 

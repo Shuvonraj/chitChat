@@ -1,3 +1,4 @@
+import Login from "./Pages/Login"
 import Registration from "./Pages/Registration"
 
 
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <> 
-    <Registration></Registration>
+    {/* <Registration></Registration> */}
+    <Login></Login>
     </>
   )
 }
